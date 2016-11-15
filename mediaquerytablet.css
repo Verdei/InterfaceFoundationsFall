@@ -1,4 +1,5 @@
-   .column{
+
+                .column{
                     display: inline-block;
                     width: 50%;
                     border: 2vh solid blue;
@@ -9,3 +10,14 @@
                 #right{
                     background-color: aquamarine;
                 }
+                nav{
+                    display: block;
+               
+                }
+                #mobileNav{
+                    background-color: darkcyan;
+                    display: none;
+                }
+               
+                 #hamburger{
+                     width: 25vw;}
