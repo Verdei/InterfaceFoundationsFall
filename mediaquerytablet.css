@@ -1,0 +1,11 @@
+   .column{
+                    display: inline-block;
+                    width: 50%;
+                    border: 2vh solid blue;
+                }
+                #left{
+                    background-color: hotpink;
+                }
+                #right{
+                    background-color: aquamarine;
+                }
