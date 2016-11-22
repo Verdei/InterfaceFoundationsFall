@@ -9,9 +9,14 @@
             input[type=radio]+span{
                 font-size: 5vh;
             }
-            a[href*=Google]{
-                font-size: 10vh;
+          
+            #after~a[href*=google]{
+                margin-right: 1vw;
             }
+            #after~a[href*=google]: last-of-type{
+                margin-right: 0;
+            }
+           
             
         </style>
     
@@ -31,13 +36,21 @@
              <a href="http://apple.com">Apple</a>
              
         </div>
-            <span>Random</span>
+            <span id="after">Random</span>
+            <a href="http://google.com">Google</a>
+            <a href="http://google.com">Google</a>
+            <a href="http://google.com">Google</a>
+            <a href="http://google.com">Google</a>
+            <a href="http://google.com">Google</a>
+            <a href="http://google.com">Google</a>
+            <a href="http://google.com">Google</a>
+            <a href="http://google.com">Google</a>
+            <a href="http://google.com">Google</a>
+            <a href="http://google.com">Google</a>
+            <span>More Randon Text</span>
         </div>
     
     </body>
-
-
-
 
 
 </html>
