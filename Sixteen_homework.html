@@ -3,13 +3,15 @@
     <head>
         <title>Sixteen Creative Agency</title>
         <style>
-           <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,900" rel="stylesheet">
-           <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900" rel="stylesheet">
+           <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,900 |Source+Sans+Pro:400,700,900" rel="stylesheet">
+        
             
             body
             {  
-              margin: 0; 
+              margin: 0;
+              border: 0;
               padding: 0;
+            
                 
             }
             header
@@ -34,6 +36,7 @@
               background-color: #89a85c;
               float: right; 
               cursor: pointer;
+              display:inline-block;
               
                 
             }
@@ -49,19 +52,21 @@
                 width: 4vh;
                 margin-left: 3vh;
                 margin-top: 3vh;
-                display: inline-block;
+                
            
                 
             }
             #main
             {
-                display: inline-block;
+                
                 background-color: #9abd67;
-                height:90vh;
+                height: 90vh;
+                background-image: url('SixteenMobileHomework/4siluetBG.png');
                 background-size: 100%;
-                background-image:url(4siluetBG.png);
                 background-repeat: no-repeat;
                 background-position: bottom;
+                text-align: center;
+                
                
             }
            
@@ -94,14 +99,14 @@
             }
             #based{
                 font-family: "Droid-Serif", serif;
-                font-size: 4vmin;
+                font-size: 3.5vmin;
                 font-style: italic;
                 color: #f5f5f5;
                 text-align: center;
                 margin: 0;
             
             }
-            #desktop{
+            #desktopArrow{
                 display: none;
             }
            
@@ -129,10 +134,10 @@
                     margin-left: 2vw;
                  }
                  #main{
-                     background-image: url("4siluetBGDesktop.png");
+                     background-image: url('SixteenMobileHomework/4siluetBGDesktop.png');
                  }
                  #arrow{
-                     display:none;    
+                     display: none;    
                  }
                  #desktopArrow{
                      display: inline-block;
@@ -145,17 +150,17 @@
                 #logo{
                     margin-left: 12.5vw;
                 }
-                nav{
-                8:10pm
-                }
+               
         </style>
     </head>
     
     <body>
 
         <header>
-           <img id="logo" src="SixteenMobileHomework/1logo.png" />                       
-           <img id="mobileMenu" src="SixteenMobileHomework/2icon.png" height="10vh" width="10vh">
+           <img id="logo" src="SixteenMobileHomework/1logo.png" />  
+            <div id="mobileMenu">
+           <img id="mobileIcon" src="SixteenMobileHomework/2icon.png" />
+            </div>
            
             <nav>
                  <a href="#">About</a>
@@ -170,14 +175,13 @@
        
         </header>
         
-        <div class="main"> 
+        <div id="main"> 
             <br/>
             <h1 id="agent">WE ARE SIXTEEN CREATIVE AGENCY</h1>
             <h2 id="based">Based on Jakarta, Indonesia</h2><br/>
           
             <img id="arrow" src="SixteenMobileHomework/3arrow.png"/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-            <img id="desktopArrow" src="3arrowDesktop.png"/>
-            <img id="main" src="SixteenMobileHomework/4siluetBG.png"/>
+            <img id="desktopArrow" src="SixteenMobileHomework/3arrowDesktop.png"/><br/><br/><br/><br>
              
         
         </div>  
