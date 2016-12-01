@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            nav{
+                display: none;
+                position: fixed;
+                top: 5vh;
+                width: 100%;
+                
+            }
+            nav div{
+                background-color:lightgray;
+                border-top: 1px solid gray;
+                padding: 2vh;
+                width: 100%;
+            }
+            nav a{
+                font-size: 5vh;
+                color: white;
+                text-decoration: none;
+            }
+            #main{
+                height: 100vh;
+                background-color: lightcoral;
+            }
+        </style>
+    </head>
+    <body>
+        <span id="menu">Show Menu</span>
+       
+        <nav>
+            <div>
+                <a href="#">About</a>
+            </div>
+            <div>
+                <a href="#">Contact US</a>
+            </div>
+            <div>
+                <a href="#">Social</a>
+            </div>
+        </nav>
+            <div id="main">
+                Header
+            </div>
+        <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script>
+            $("#menu").click(function(e){
+               $("nav").slideToggle(1000);  
+            });
+            $("#main").click(function(e){
+               $("nav").slideUp(1000);
+                             })
+            
+        </script>
+    </body>
+    <footer>
+    
+    </footer>
+</html>
