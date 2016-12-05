@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>      
+    <head>    
+    </head>
+    <body>
+               <p>Please guess a number 1-100</p>
+        <input id="guess" placeholder="Enter Number Here">
+        <button id="submit" type="button">Submit</button>
+        <div id="list"></div>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous">
+        </script>
+
+        <script>
+            var computerNumber = parseInt(Math.random()*100+1);
+
+            $("#submit").click(function(e){
+            var guess = $("#guess").val();
+            console.log(guess); 
+            var html = $("#list").html();
+            console.log(html);    
+                
+            if (guess == "computerNumber") {
+            $("body").html("You Win!");
+            turns = 0;
+            }else (guess != "computerNumber"){
+            $("#list").html("Guess Again");
+      
+            }
+                  
+                    
+            }
+                               
+          
+        </script>
+       
+    </body>
+
+
+</html>
