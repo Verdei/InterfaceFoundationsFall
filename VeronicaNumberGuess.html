@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>      
-    <head>    
+    <head>  
+        
     </head>
     <body>
         <p>PLEASE GUESS A NUMBER 1-100</p>
@@ -8,29 +9,27 @@
         <button id="submit" type="button">Submit</button>
         <div id="list"></div>
 
-        <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js">
         </script>
 
         <script>
             var computerNumber = parseInt(Math.random()*100+1);
             console.log(computerNumber);
             
-            var html = $("#list").html();
-            console.log(html);
-            
-            $("submit").click(function(e){
-            var guess = $("#guess").val(); 
+            $("#submit").click(function(e){
+            var userNumber = $("#guess").val(); 
     
-            if (guess == computerNumber) {
-            $("body").html("You Win!");
+            if (computerNumber == userNumber) {
+            $("#list").text("You Win!");
             }
             else 
             {
-            $("#list").html("Guess Again");
+            $("#list").text("Guess Again");
             }
       
             });    
 
+     
         </script>
        
     </body>

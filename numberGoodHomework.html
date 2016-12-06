@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    </head>
+    <body>
+        <input id="guess" />
+        <button id="go"> Guess</button>
+        <br/><br/>
+        <span>Guesses:</span>
+        <span id="count">0</span>
+        
+        <span id="msg"></span>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script>
+            var counter = 0;
+            var computerNum = parseInt(Math.random()*100+1);
+            
+            $("#go").click(function(){
+                counter++;
+                $("#count").text(counter)
+                var userNum = $("#guess").val();
+              
+                if(computerNum == userNum){
+                  $("#msg").text("You Win!");
+            
+                }else if(computerNum < userNum){
+                  $("#msg").text("Your number was too high");
+                }else{
+                   $("#msg").text("Your number was too low");
+              }
+            })
+        
+        
+        </script>
+        
+    </body>
+</html>
