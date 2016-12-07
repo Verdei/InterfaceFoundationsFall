@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .correct{
+                background-color: aquamarine;
+            }
+            .incorrect{
+                background-color:aqua;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <span class="question">What is 5+5</span> 
+        <input class="answer" answer ="10"/><br/>
+        
+        <span class="question">What is 5+7</span> 
+        <input class="answer" answer ="12"/><br/>
+        
+        <span class="question">What is the Capital of Your Mom?</span> 
+        <input class="answer" answer ="Awesome"/><br/>
+        
+        <span class="question">What is 5 * 5</span> 
+        <input class="answer" answer ="25"/><br/>
+        <br/>
+        <br/>
+        <br/>
+        <button type="button" id="check">Check you answers</button>
+   
+     <script src="https://code.jquery.com/jquery-2.2.4.min.js">
+        </script>
+        <script>
+            $("#check").click(function(e){
+                $(".answer").each(function(){
+                    var value = $(this).val();
+                    var answer= $(this).attr("answer");
+                    if (value == answer){
+                        $(this).addClass("correct");
+                    }else{
+                        $(this).addClass("incorrect").removeClass("correct");
+                    }
+                            });
+                              
+                              });
+        
+        
+        </script>
+    </body>
+
+</html>
