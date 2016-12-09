@@ -8,6 +8,12 @@
             .incorrect{
                 background-color:aqua;
             }
+            .correctLabel{
+               border: blue 1px black
+            }
+            .incorrectLabel{
+                color: orange
+            }
         
         </style>
     </head>
@@ -36,9 +42,11 @@
                     var value = $(this).val();
                     var answer= $(this).attr("answer");
                     if (value == answer){
-                        $(this).addClass("correct");
+                        $(this).addClass("correct").removeClass("incorrect");
+                        $(this).prev().addClass("correctLabel").removeClass("incorrectLabel");
                     }else{
-                        $(this).addClass("incorrect").removeClass("correct");
+                         $(this).addClass("incorrect").removeClass("correct");
+                        $(this).prev().addClass("incorrectLabel").removeClass("correctLabel");
                     }
                             });
                               

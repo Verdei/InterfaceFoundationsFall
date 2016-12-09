@@ -1,10 +1,13 @@
 function change(){
     console.log("change function fired");
     var data = $("#data").val();
-    $("container").html(data);
-    while(true){
-        console.log("Inside Loop");
+    if (data == ""){
+        $("#data").assClass("error");
+    }else{
+        $("#data").removeClass("error");
     }
+    $("container").html(data);
+  
 }
 
 $("#change").click(change);
@@ -15,4 +18,6 @@ $("#data").keypress(function(e){
     }
 });
     
-
+$("#container").click(function(e){
+    $("#container").toggleClass("active");
+});

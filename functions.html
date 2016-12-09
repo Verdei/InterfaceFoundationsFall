@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
-    
+        <style>
+            #container{
+                display: inline-block;
+                width: 50%;
+                height: 50vh;
+                background-color: aquamarine;
+                border: 10px solid green;
+                
+                
+            }
+            .error{
+                background-color: red;
+            }
+            .active{
+                
+                background-color: antiquewhite !important;
+            }
+        
+        
+        </style>
     </head>
     <body>
-        <div id="container"></div>
+        <h1>Header</h1>
+        <div id="container">
+            <h1>Inside Container</h1>
+        </div>
+        <br/><br/>
+        
         <input id="data" />
         <button type="button" id="change">CHANGE</button>
+        <img id="logo" src="SixteenMobileHomework/1logo.png" />
         
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script src="functions.js"></script>
+        <script
+          src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+          integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+          crossorigin="anonymous"></script>
    
     </body>
 </html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-content: space-around;
+            }
+            
+            .box{
+                
+                width: 25vw;
+                height: 25vw;
+                background-color: blue;
+                border: 10px solid black;
+                box-sizing: border-box;
+                margin: 5w;
+            }
+            
+            .selected{
+                
+                background-color: red;
+            }
+        </style>
+    
+    </head>
+    <body>
+        <button type="button" id="add">Add Box</button>
+    
+        <div id="container">
+        <!--<div class="box"></div>-->
+            </div>
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js">
+        </script>
+        <script>
+            $("#add").click(function(e){
+                    $("#container").append("<div class='box'></div>");
+                            });
+            $("body").on("click", ".box", function(){
+                $(this).toggleClass("selected");
+            });
+        </script>
+
+    </body>
+</html>
